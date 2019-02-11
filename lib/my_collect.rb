@@ -1,11 +1,11 @@
-
-
-def my_collect(array)
+def my_collect(array) # put argument(s) here
+  # code here
   i = 0
-  new_array = []
-  while i < array.length
-    new_array[i] = yeild array[i]
+  result = []
+  while i< array.length
+    result[i] = yield array[i]
     i += 1
   end
-  new_array
+
+  result
 end
